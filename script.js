@@ -35,7 +35,7 @@ submit.addEventListener("click",(e)=>{
 })
 getWeather("Bhiwandi")
 
-const getCWeather = ()=>{
+const getMWeather = ()=>{
     fetch('https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=Mumbai', options)
         .then(response => response.json())
         .then(response =>{
@@ -54,7 +54,70 @@ const getCWeather = ()=>{
         .catch(err => console.error(err));
     }
 
-getCWeather()
+getMWeather()
+
+const getDWeather = ()=>{
+    fetch('https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=Delhi', options)
+        .then(response => response.json())
+        .then(response =>{
+            console.log(response)
+            temp4.innerHTML = response.temp
+            cloud_pct4.innerHTML = response.cloud_pct
+            feels_like4.innerHTML = response.feels_like 
+            humidity4.innerHTML = response.humidity 
+            min_temp4.innerHTML = response.min_temp 
+            max_temp4.innerHTML = response.max_temp 
+            wind_speed4.innerHTML = response.wind_speed
+            wind_degrees4.innerHTML = response.wind_degrees 
+            sunrise4.innerHTML = response.sunrise 
+            sunset4.innerHTML = response.sunset
+        })
+        .catch(err => console.error(err));
+    }
+
+getDWeather()
+
+const getLWeather = ()=>{
+    fetch('https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=Lucknow', options)
+        .then(response => response.json())
+        .then(response =>{
+            console.log(response)
+            temp5.innerHTML = response.temp
+            cloud_pct5.innerHTML = response.cloud_pct
+            feels_like5.innerHTML = response.feels_like 
+            humidity5.innerHTML = response.humidity 
+            min_temp5.innerHTML = response.min_temp 
+            max_temp5.innerHTML = response.max_temp 
+            wind_speed5.innerHTML = response.wind_speed
+            wind_degrees5.innerHTML = response.wind_degrees 
+            sunrise5.innerHTML = response.sunrise 
+            sunset5.innerHTML = response.sunset
+        })
+        .catch(err => console.error(err));
+    }
+
+getLWeather()
+
+const getBWeather = ()=>{
+    fetch('https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=Bangalore', options)
+        .then(response => response.json())
+        .then(response =>{
+            console.log(response)
+            temp6.innerHTML = response.temp
+            cloud_pct6.innerHTML = response.cloud_pct
+            feels_like6.innerHTML = response.feels_like 
+            humidity6.innerHTML = response.humidity 
+            min_temp6.innerHTML = response.min_temp 
+            max_temp6.innerHTML = response.max_temp 
+            wind_speed6.innerHTML = response.wind_speed
+            wind_degrees6.innerHTML = response.wind_degrees 
+            sunrise6.innerHTML = response.sunrise 
+            sunset6.innerHTML = response.sunset
+        })
+        .catch(err => console.error(err));
+    }
+
+getBWeather()
   
 
 
