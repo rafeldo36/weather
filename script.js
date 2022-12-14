@@ -54,7 +54,7 @@ const getMWeather = ()=>{
         .catch(err => console.error(err));
     }
 
-getMWeather()
+getMWeather("Mumbai")
 
 const getDWeather = ()=>{
     fetch('https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=Delhi', options)
@@ -75,7 +75,7 @@ const getDWeather = ()=>{
         .catch(err => console.error(err));
     }
 
-getDWeather()
+getDWeather("Delhi")
 
 const getLWeather = ()=>{
     fetch('https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=Lucknow', options)
@@ -96,7 +96,7 @@ const getLWeather = ()=>{
         .catch(err => console.error(err));
     }
 
-getLWeather()
+getLWeather("Lucknow")
 
 const getBWeather = ()=>{
     fetch('https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=Bangalore', options)
@@ -117,7 +117,7 @@ const getBWeather = ()=>{
         .catch(err => console.error(err));
     }
 
-getBWeather()
+getBWeather("Bangalore")
   
 
 
